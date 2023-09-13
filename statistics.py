@@ -15,7 +15,7 @@ from scipy.stats import cauchy
 from scipy.stats import f
 import plotly.express as px
 
-inicio = st.selectbox("Some problems and exemples of statistics graphics. "
+inicio = st.selectbox("Some problems and examples of statistics graphics. "
                       "Select the problem:", ("Distributions", "Bivariate Normal Distribution",
                                               "Central Limit Theorem", "Quantiles"))
 
