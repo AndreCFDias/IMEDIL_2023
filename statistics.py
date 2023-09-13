@@ -85,7 +85,7 @@ if inicio == "Distributions":
         if histog:
             ax3.hist(qs1, 10, range=(0, 40), density=True, alpha=0.6)
         if curve:
-            ax3.plot(qs, chi2.pdf(qs, df), 'r-', lw=3, alpha=0.7, label='Qui-quadrado')
+            ax3.plot(qs, chi2.pdf(qs, df), 'r-', lw=3, alpha=0.7, label='Chi-squared')
         plt.xlim(0, 40)
         plt.ylim(0, 0.25)
         if mm:
