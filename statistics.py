@@ -76,7 +76,7 @@ if inicio == "Distributions":
         histog = st.sidebar.checkbox('Histogram')
         curve = st.sidebar.checkbox('Curve', value=True)
         mm = st.sidebar.checkbox('Mean/Median')
-        df = st.sidebar.number_input('Graus de Liberdade:', min_value=1, value=3, step=1)
+        df = st.sidebar.number_input('Degrees of freedom:', min_value=1, value=3, step=1)
         qs1 = np.random.chisquare(df, 100)
         qs = np.linspace(chi2.ppf(0.00000001, df), chi2.ppf(0.99999999, df), 100)
 
