@@ -136,7 +136,7 @@ if inicio == "Distributions":
 
     elif opcao == "Poisson":
         st.header("Probability Mass Function:")
-        n2 = st.sidebar.number_input('N total:', min_value=0, value=10, step=1)
+        n2 = 20
         lambd2 = st.sidebar.number_input('Lambda/mean:', min_value=0.1, value=4.5, step=0.25)
         x1 = range(0, n2 + 1)
         dados_poisson = poisson.pmf(x1, mu=lambd2)
@@ -152,12 +152,12 @@ if inicio == "Distributions":
         st.pyplot(fig6)
 
 elif inicio == "Bivariate Normal Distribution":
-    st.header("Probability Density Function: Bivariate Normal Distribution")
+    st.header("Probability Density Function and Contours plots")
     mu1 = st.sidebar.number_input('Mean1:', value=0.0, step=0.5)
     sd1 = st.sidebar.number_input('sd1:', min_value=0.0, value=1.0, step=0.5)
     mu2 = st.sidebar.number_input('Mean2:', value=0.0, step=0.5)
     sd2 = st.sidebar.number_input('sd2:', min_value=0.0, value=1.0, step=0.5)
-    cor = st.sidebar.number_input('Corr:', min_value=-0.9, max_value=0.9, value=0.0, step=0.1)
+    cor = st.sidebar.number_input('Cor [X1,X2]:', min_value=-0.9, max_value=0.9, value=0.0, step=0.1)
 
     mu = [mu1, mu2]
     mcov = [[(sd1 ** 2), cor], [cor, (sd2 ** 2)]]
