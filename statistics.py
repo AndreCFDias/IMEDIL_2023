@@ -152,7 +152,7 @@ if inicio == "Distributions":
         st.pyplot(fig6)
 
 elif inicio == "Bivariate Normal Distribution":
-    st.header("Probability Density Function and Contours plots")
+    st.header("Probability Density Function and Contour plot")
     mu1 = st.sidebar.number_input('Mean1:', value=0.0, step=0.5)
     sd1 = st.sidebar.number_input('sd1:', min_value=0.0, value=1.0, step=0.5)
     mu2 = st.sidebar.number_input('Mean2:', value=0.0, step=0.5)
